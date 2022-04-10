@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react"
 
 const Question = ({ question, totalQuestions, currentQuestion, setAnswer }) => {
     const [selectedOption, setSelectedOption] = useState(null)
-    const [vocAnswer, setVocAnswer] = useState("")
+    const [vocAnswer, setVocAnswer] = useState(null)
 
     const timer = useRef(null)
     const prograssBar = useRef(null)
@@ -21,7 +21,7 @@ const Question = ({ question, totalQuestions, currentQuestion, setAnswer }) => {
         }, 0)
         timer.current = setTimeout(gotoNextQuestion, 10 * 1000)
         return gotoNextQuestion
-    }, [question])
+    })
 
 
     return (<div className="question">

@@ -92,7 +92,7 @@ button {
 }
 
 .quiz-screen .question .main{
-  padding: 20px 40px;
+  padding: 20px ;
 }
 
 .quiz-screen .question .main .title span{
@@ -107,17 +107,19 @@ button {
 }
 
 .quiz-screen .question .main .options{
-  margin: 40px 0px 20px;
-  display: flex;
+  margin:20px;
+  display: block;
   justify-content: space-between;
   flex-wrap: wrap;
   gap:20px;
 }
 
 .quiz-screen .question .main .options .option{
-  width: calc(60%-20px);
+  width: calc(100%-20px);
+  align-items: center;
   border: 1px solid #bbb;
   padding: 10px;
+  margin-top: 5px;
   border-radius: 5px;
   cursor: pointer;
 }
